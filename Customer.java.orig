@@ -1,0 +1,12 @@
+<<<<<<< HEAD
+import java.time.*; //modified by user2
+=======
+import java.time.* //user1 modified
+>>>>>>> 6337883b296186447c1a888a337507fd563b1e67
+class Customer{
+private long customerId;
+private String name;
+private LocalDate dob;
+
+
+}
