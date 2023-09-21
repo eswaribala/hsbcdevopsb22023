@@ -4,7 +4,7 @@ tar zxvf p4v.tgz
  sudo mkdir /opt/p4merge
 
 
-sudo mv /home/guya/Downloads/p4v-2019.1.1830398/* /opt/p4merge
+sudo mv p4v-2019.1.1830398/* /opt/p4merge
 
 Create a symbolic link to the p4merge executable with the command:sudo ln -s /opt/p4merge/bin/p4merge /usr/local/bin/p4merge
 
