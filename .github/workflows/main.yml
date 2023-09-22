@@ -1,0 +1,20 @@
+name: Multiple Jobs
+on: push
+env:
+  username: Parameswari
+  super_duper_var: totally_awesome
+
+jobs:
+  windows_job:
+    runs-on: windows-latest
+    steps:
+      - run: echo 'Hi ${{ env.username }}'  # Hi Parameswari
+      - run: echo 'Hi ${{ env.username }}'  # Hi Vignesh
+        env:
+          username: Vignesh
+  linux_job:
+    runs-on: ubuntu-latest
+    env:
+      username: Bala
+    steps:
+      - run: echo 'Hi ${{ env.username }}'  # Hi Bala
