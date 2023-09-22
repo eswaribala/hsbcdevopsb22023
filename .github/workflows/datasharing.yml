@@ -37,4 +37,4 @@ jobs:
         with:
           name: output-log-file
             run:|
-                 cat output.log 
+                 ls -a
