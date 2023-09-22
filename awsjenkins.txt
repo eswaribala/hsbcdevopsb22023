@@ -1,0 +1,31 @@
+sudo apt-get update -y
+sudo apt-get remove --purge jenkins
+sudo apt install openjdk-8-jre -y
+sudo apt install openjdk-11-jdk
+
+wget https://updates.jenkins-ci.org/latest/jenkins.war
+java -jar jenkins.war
+
+sudo ufw allow 8080
+sudo ufw status
+
+set up security group rule to allow custom TCP 8080
+sudo cat  /var/lib/jenkins/secrets/initialAdminPassword
+d
+70a2d8875d434d49ba037a3c462f6fc2
+
+http://35.170.73.130:8080/
+
+sudo apt-get update
+sudo apt-get install openjdk-8-jdk
+sudo apt install git
+git --version
+s
+sudo apt update
+
+ netstat -ltnp | grep -w '3000'
+
+
+sudo apt install maven
+
+sudo usermod -aG docker jenkins
